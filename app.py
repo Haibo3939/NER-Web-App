@@ -36,8 +36,8 @@ app.config["ALLOWED_EXTENSIONS"] = ALLOWED_EXTENSIONS
 Markdown(app)
 
 #load model
-# model = spacy.load(r"./models/bert_fine_tuned")
-model = spacy.load('en_core_web_sm')
+model = spacy.load(r"./models/bert_fine_tuned")
+# model = spacy.load('en_core_web_sm')
 
 def allowed_file(filename):
     return '.' in filename and \
