@@ -26,7 +26,7 @@ HTML_WRAPPER = """<div style="overflow-x: auto; border: 1px solid #e6e9ef; borde
 from flaskext.markdown import Markdown
 
 #initialize upload path
-UPLOAD_FOLDER = "/Users/haibo/NER WEB APP/uploads"
+UPLOAD_FOLDER = "./uploads"
 
 ALLOWED_EXTENSIONS = {'pdf'}
 
@@ -36,7 +36,8 @@ app.config["ALLOWED_EXTENSIONS"] = ALLOWED_EXTENSIONS
 Markdown(app)
 
 #load model
-model = spacy.load(r"./models/bert_fine_tuned")
+# model = spacy.load(r"./models/bert_fine_tuned")
+model = spacy.load('en_core_web_sm')
 
 def allowed_file(filename):
     return '.' in filename and \
