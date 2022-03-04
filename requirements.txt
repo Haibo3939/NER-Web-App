@@ -3,7 +3,6 @@ flask
 flask-ext
 flask-markdown
 spacy
-json
 pandas
 numpy 
 pathlib 
