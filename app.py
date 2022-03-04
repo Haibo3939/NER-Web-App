@@ -47,7 +47,6 @@ def allowed_file(filename):
 def index():
     return render_template('index.html')
 
-
 @app.route("/upload-pdf", methods=["GET", "POST"])
 def upload_pdf():
     if request.method == "POST":
