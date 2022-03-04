@@ -6,12 +6,5 @@ spacy
 pandas
 numpy 
 pathlib
-logging
-sys
-re
-tqdm
-glob
 pdfminer
-io
-glob
 werkzeug
