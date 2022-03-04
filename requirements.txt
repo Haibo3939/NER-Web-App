@@ -5,8 +5,7 @@ flask-markdown
 spacy
 pandas
 numpy 
-pathlib 
-random
+pathlib
 logging
 sys
 re
